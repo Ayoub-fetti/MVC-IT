@@ -1,3 +1,5 @@
+
+
 <?php
 
 class Router
@@ -46,6 +48,7 @@ class Router
                 return call_user_func_array($callback, $matches);
             }
         }
+
         // Handle 404
         http_response_code(404);
      	  echo "404 - Not Found";
